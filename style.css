@@ -26,15 +26,24 @@ body {
 /* =============================================================================
   #TYPOGRAPHY
 ============================================================================= */
-
+h3 {
+    color: hsl(75, 94%, 57%);
+    font-weight:  600;
+}
 /* =============================================================================
   #CONTENT
 ============================================================================= */
 
 main {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-    background-color: red;
+    width: 400px;
+    height: 600px;
+
+    background-color: hsl(0, 0%, 12%);
 }
 
 /* @media only screen and (min-width: 850px) {
@@ -56,3 +65,25 @@ main {
         
     }
 } */
+
+picture {
+    display: block;
+    
+    border-radius: 50%;
+}
+    img {
+        object-fit: cover;
+        object-position: center;
+        
+        border-radius: 50%;
+    }
+
+.socials {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}
