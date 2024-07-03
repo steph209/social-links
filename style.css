@@ -87,3 +87,11 @@ picture {
     font-style: normal;
     font-size: 16px;
 }
+
+a {
+    background-color: red;
+}
+
+a:hover {
+    color: green
+}
