@@ -1,11 +1,26 @@
+@font-face {
+    font-family: "Inter";
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
 
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* =============================================================================
 #GENERAL
 ============================================================================= */
 
 body {
+    display: flex;
+    justify-content: center;
+
     background-color: hsl(0, 0%, 8%);
+    color: white;
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
 }
 
 /* =============================================================================
@@ -17,11 +32,12 @@ body {
 ============================================================================= */
 
 main {
-    background-attachment: red;
-    width: 100%;
+    text-align: center;
+
+    background-color: red;
 }
 
-@media only screen and (min-width: 850px) {
+/* @media only screen and (min-width: 850px) {
     main {
         width: 80%;
         padding: 40px;
@@ -39,4 +55,4 @@ main {
         width: 600px;
         
     }
-}
+} */
