@@ -13,6 +13,7 @@
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     background-color: hsl(0, 0%, 8%);
     color: white;
@@ -20,21 +21,37 @@ body {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 16px;
+
+    height: 100svh;
 }
 
-p {
-    margin-top: 30px;
-}
 
 /* =============================================================================
-  #TYPOGRAPHY
+#TYPOGRAPHY
 ============================================================================= */
-h3 {
+
+p {
+    margin-bottom: 24px;
+}
+
+p.highlight {
     color: hsl(75, 94%, 57%);
     font-weight:  600;
-    
 }
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.heading p {
+    margin-bottom: 0;
+}
+
 /* =============================================================================
   #CONTENT
 ============================================================================= */
@@ -45,11 +62,11 @@ main {
     align-items: center;
     flex-direction: column;
 
-    margin-top: 200px;
+   
     border-radius: 10px;
-
     width: 400px;
-    height: 600px;
+    padding: 40px;
+
 
     background-color: hsl(0, 0%, 12%);
 }
@@ -59,11 +76,13 @@ picture {
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    margin-bottom: 24px;
 
     background-color: red;
     overflow: hidden;
 
     align-content: flex-start;
+
 }
     img {
         display: flex;
@@ -78,23 +97,28 @@ picture {
     display: flex;
     flex-direction: column;
 
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-style: normal;
     font-size: 16px;
-
+    width: 100%;
 }
 
 a {
     background-color: hsl(0, 0%, 20%);
-    
-    height: 50px;
-    width: 350px;
-    padding: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
 
     text-align: center;
     text-decoration: none;
     color: white;
+}
+
+a + a {
+    margin-top: 12px;
 }
 
 a:hover {
