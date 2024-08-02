@@ -70,7 +70,9 @@ main {
 
     background-color: hsl(0, 0%, 12%);
 }
-
+.box-animation{
+    animation: slide-in 1s forwards;
+}
 picture {
     display: flex;
     border-radius: 50%;
@@ -123,16 +125,30 @@ a + a {
 }
 
 a:hover {
-    /* background-color: hsl(75, 67%, 41%); */
     animation: social-links 1s forwards;
 }
 
-@-webkit-keyframes social-links {
+@keyframes social-links {
     0% {
-        transform: scale(1);
+        transform: translateZ(0) translateY(0) scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+
     }
 
     100% {
-        background-color: hsl(75, 67%, 41%);
-        transform: scale(1.1);
+        transform: translateZ(50px) translateY(-5px) scale(1.1);
+        box-shadow: 0 12px 20px -12px hsl(75, 94%, 57%);
+}
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
