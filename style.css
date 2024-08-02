@@ -115,6 +115,7 @@ a {
     text-align: center;
     text-decoration: none;
     color: white;
+
 }
 
 a + a {
@@ -122,5 +123,16 @@ a + a {
 }
 
 a:hover {
-    background-color: green
+    /* background-color: hsl(75, 67%, 41%); */
+    animation: social-links 1s forwards;
+}
+
+@-webkit-keyframes social-links {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        background-color: hsl(75, 67%, 41%);
+        transform: scale(1.1);
 }
